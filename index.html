@@ -27,7 +27,7 @@ title: Home
 		{% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}</p>
 	      
     {% endif %}
-<p class="post-date">{{ post.date | date_to_string }}</span> 	  
+<p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span> 	  
   </div>
 	 
   {% endfor %}
